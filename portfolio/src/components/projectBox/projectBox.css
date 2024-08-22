@@ -1,0 +1,87 @@
+.projectBox {
+    width: 100%;
+    color: black;
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.projectBox:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.projectBox a {
+    color: inherit;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+    color: #FFBBEC;
+    width: max-content;
+}
+
+.projectBox a:hover {
+    color: #00FFCA;
+}
+
+.pbImgContainer {
+    flex: 1;
+}
+
+.pbImgContainer img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.pbInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+
+    background-clip: text;
+    color: transparent;
+}
+
+.pbInfoContainer h2 {
+    font-size: 2.5rem;
+}
+
+.pbInfoContainer h4 {
+    font-size: 1.2rem;
+}
+
+.linee {
+    height: 1px;
+    display: none;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+    .projectBox {
+        flex-direction: column !important;
+    }
+
+    .pbInfoContainer h2 {
+        font-size: 1.7rem;
+    }
+
+    .pbInfoContainer h4 {
+        font-size: 1rem;
+    }
+
+    .linee {
+        display: block;
+    }
+}

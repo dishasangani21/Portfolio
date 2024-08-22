@@ -1,0 +1,27 @@
+.projectBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: bolder;
+    width: 90vw;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: black;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    margin: 20px auto;
+    transition: opacity 0.2s ease-in;
+}
+
+.projectBanner:hover {
+    opacity: 90%;
+}
+
+@media (max-width: 640px) {
+    .projectBanner {
+        height: 150px;
+        font-size: 30px;
+    }
+}

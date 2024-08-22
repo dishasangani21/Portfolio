@@ -1,0 +1,70 @@
+.footer__container {
+    height: max-content;
+    background-color: var(--color-footer);
+    margin-top: 2rem;
+}
+
+.footer__container-top {
+    background-color: #002853;
+    height: max-content;
+}
+
+.footer__icons {
+    display: flex;
+    padding: 0.3rem 10rem;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer__icons a {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__icons a:hover {
+    color: #0079FF;
+}
+
+.footer__Container-down {
+    display: flex;
+    padding: 0 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    height: 4rem;
+}
+
+.footer__Container-down h3 {
+    background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: poppins;
+}
+
+
+/* ===================RESPONSIVE CSS===================== */
+
+@media only screen and (max-width: 990px) {
+    .footer__Container-down {
+        padding: 0 5rem;
+    }
+
+    .footer__icons {
+        gap: 1rem;
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .footer__Container-down {
+        padding: 0 1rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .footer__icons {
+        gap: 3rem;
+    }
+}

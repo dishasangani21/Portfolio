@@ -1,0 +1,32 @@
+.projectPage {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-family: var(--font-family);
+    width: 75vw;
+    margin-inline: auto;
+}
+
+.projectHeading {
+    font-size: 3rem;
+    margin-top: 20px;
+    font-weight: bolder;
+    border-bottom: 5px solid white;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .projectPage{
+        width: auto;
+    }
+}

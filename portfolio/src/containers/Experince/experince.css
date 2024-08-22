@@ -1,0 +1,179 @@
+.experince__section {
+    background-color: #040c18;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    height: max-content;
+}
+
+.experince__section-container {
+    width: 90vw;
+    background-color: #002853;
+    /* height: 50%; */
+    margin: auto;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.experince__section-container__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.experince__section-container__left h1 {
+    font-size: 4rem;
+    font-family: poppins;
+    margin: 3rem 0;
+}
+
+.experince__section-container__left p {
+    margin: 0 3rem 0 0;
+    text-align: justify !important;
+}
+
+.experince__section-container__left button {
+    margin-top: 3rem;
+    max-width: max-content;
+}
+
+.experince__section-container__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.experince__card {
+    background-color: #06325e;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    animation: cardAni 2s;
+}
+
+
+@keyframes cardAni {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.experince__card h3 {
+    margin: 0.8rem 0;
+    font-size: 1.4rem;
+}
+
+.experince__card p {
+    color: white;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+/* ===================RESPONSIVE CSS===================== */
+
+@media only screen and (max-width: 990px) {
+    .experince__section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experince__section-container__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experince__section-container__left p {
+        margin-right: 0rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .experince__section-container__left button {
+        display: none;
+    }
+
+    .experince__card {
+        padding: 1rem 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .experince__section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experince__section-container__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experince__section-container__left p {
+        margin-right: 0rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .experince__section-container__left button {
+        display: none;
+    }
+
+    .experince__card {
+        padding: 1rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .experince__section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experince__section-container__left p {
+        font-size: 17px;
+    }
+
+    .experince__section-container__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .experince__section-container__left h1 {
+        font-size: 3rem;
+    }
+
+    .experince__section-container__left p {
+        margin-right: 0rem;
+    }
+
+    .experince__section-container__left button {
+        text-align: center;
+        display: none;
+    }
+
+
+    .experince__section-container {
+        padding: 0.4rem;
+        text-align: center;
+    }
+
+    .experince__section-container__right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+    }
+
+    .experince__card {
+        padding: 1rem;
+    }
+}
